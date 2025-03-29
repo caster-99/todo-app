@@ -81,11 +81,3 @@ Routes on both the backend and frontend are protected using JWT-based authentica
 ## Deployment
 
 A live version of the app is deployed at: [https://lopez-2fdd2f.vercel.app/](https://lopez-2fdd2f.vercel.app/)
-
----
-
-## Additional Notes
-
-- Ensure the `.env` files are configured correctly before running the application.
-- If you will test it locally, ensure the backend is running before starting the frontend.
-- I forked the project for the deployment here: [https://github.com/caster-99/Lopez-2fdd2f](https://github.com/caster-99/Lopez-2fdd2f).
