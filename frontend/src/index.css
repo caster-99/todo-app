@@ -1,0 +1,125 @@
+body {
+  font-family: "Montserrat Variable", sans-serif;
+  background-color: #fff;
+}
+
+.bg-cream {
+  background-color: #ffeac7;
+}
+
+.bg-off-white {
+  background-color: #f5f5f5;
+}
+
+.bg-off-gray {
+  background-color: #adadad;
+}
+
+a {
+  color: #000;
+}
+
+input:focus,
+.form-control:focus {
+  outline: none !important;
+  border: 1px solid black !important;
+  box-shadow: none !important;
+}
+
+.bg-gradient {
+  background: linear-gradient(180deg, #dcc0ff 0%, #f4a6a3 100%) !important;
+}
+
+.btn {
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Primary Button */
+.btn-primary {
+  background-color: #dcc0ff; /* Soft pink */
+  color: black;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #ecdcff;
+  color: black; /* Slightly darker pink for hover effect */
+}
+
+.btn-primary:disabled {
+  background-color: #f4a6a3;
+  color: white;
+}
+
+/* Danger Button */
+.btn-danger {
+  background-color: #f4a6a3; /* Pastel red */
+  color: black;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #f28c88; /* Slightly darker red for hover effect */
+}
+
+/* Info Button */
+.btn-info {
+  background-color: #bae3f2; /* Light pastel blue */
+  color: black;
+  border: none;
+}
+
+.btn-info:hover {
+  background-color: #a2d7ee; /* Slightly darker blue for hover effect */
+}
+
+/* Success Button */
+.btn-success {
+  background-color: #bce3c0; /* Soft pastel green */
+  color: black;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #a8d7ad; /* Slightly darker green for hover effect */
+}
+
+/* Warning Button */
+.btn-warning {
+  background-color: #ffe6b3; /* Light pastel yellow */
+  color: black;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: #ffd98c; /* Slightly darker yellow for hover effect */
+}
+
+/* Secondary Button */
+.btn-secondary {
+  background-color: #dfd0f2;
+  color: black;
+}
+
+.btn-secondary:hover {
+  background-color: #f1e7fd;
+  border: none;
+  color: black;
+}
+
+.btn-text {
+  background-color: transparent;
+  color: black;
+  border: 1px solid #dcc0ff;
+}
+
+.btn-text:hover {
+  background-color: #dcc0ff;
+  color: white;
+}
