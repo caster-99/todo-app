@@ -7,7 +7,7 @@ const getAllNotes = async () => {
         // Fetch all notes along with the associated User and Category
         const notes = await Note.findAll({
 
-            include: [{ model: User, attributes: ['username', 'email'] }, { model: Category, attributes: ['name'] }],
+            include: [{ model: User, attributes: ['name', 'email'] }, { model: Category, attributes: ['name'] }],
             raw: true, // Flattens data for debugging
             nest: true // Keeps relationships nested
         });
@@ -61,7 +61,7 @@ const getNotesByUser = async (userId) => {
     try {
         const notes = await Note.findAll({
             where: { UserId: userId },
-            include: [{ model: User, attributes: ['username', 'email', 'id'] }, { model: Category, attributes: ['name', 'id'] }],
+            include: [{ model: User, attributes: ['name', 'email', 'id'] }, { model: Category, attributes: ['name', 'id'] }],
             raw: true, // Flattens data for debugging
             nest: true // Keeps relationships nested
         });
@@ -76,7 +76,7 @@ const getNotesByCategory = async (categoryId) => {
     try {
         const notes = await Note.findAll({
             where: { CategoryId: categoryId },
-            include: [{ model: User, attributes: ['username', 'email'] }, { model: Category, attributes: ['name'] }],
+            include: [{ model: User, attributes: ['name', 'email'] }, { model: Category, attributes: ['name'] }],
             raw: true, // Flattens data for debugging
             nest: true // Keeps relationships nested
         });
@@ -94,7 +94,7 @@ const getNotesByUserAndCategory = async (userId, categoryId) => {
                 UserId: userId,
                 CategoryId: categoryId
             },
-            include: [{ model: User, attributes: ['username', 'email'] }, { model: Category, attributes: ['name'] }],
+            include: [{ model: User, attributes: ['name', 'email'] }, { model: Category, attributes: ['name'] }],
             raw: true, // Flattens data for debugging
             nest: true // Keeps relationships nested
         });

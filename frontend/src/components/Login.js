@@ -34,6 +34,7 @@ const Login = () => {
             await login({ email, password }); // Call login from context
             navigate('/'); // Redirect on successful login
         } catch (err) {
+            console.log('Login Error:', err);
             // Show a user-friendly error message based on the error
             if (err.message === 'User not found') {
                 setError('User not found. Please check your email and try again.');
@@ -44,7 +45,6 @@ const Login = () => {
             setLoading(false);
         }
     };
-
 
 
     return (
@@ -95,7 +95,7 @@ const Login = () => {
                                             </div>
 
                                             {/* Submit Button */}
-                                            <div className="text-center pt-1 mb-5 pb-1">
+                                            <div className="text-center pt-1 pb-1">
                                                 <button
                                                     disabled={loading || !email || !password}
                                                     className="btn btn-primary btn-block"
@@ -104,6 +104,20 @@ const Login = () => {
                                                     {loading ? 'Logging in...' : 'Log in'}
                                                 </button>
                                             </div>
+
+                                            <div className="text-center pt-1 mb-5 pb-1">
+                                                <button
+                                                    disabled={loading || !email || !password}
+                                                    className="btn btn-secondary"
+                                                    type="button"
+                                                    onClick={() => navigate('/register')}
+                                                >
+                                                    Create Account
+                                                </button>
+                                            </div>
+
+
+
                                         </form>
                                     </div>
                                 </div>
@@ -114,7 +128,7 @@ const Login = () => {
                                         </h4>
                                         <p className="small mb-0">
                                             This is a simple notes app that allows you to create, read, update, and delete notes.
-                                            Made with love by <a href="https://luisalopezdev.onrender.com/" target='_blank'>Luisa Lopez</a>, as a technical test for a job application.
+                                            Made with love by <a href="https://luisalopezdev.onrender.com/" target='_blank'>Luisa Lopez</a>.
                                         </p>
                                     </div>
                                 </div>

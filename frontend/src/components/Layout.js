@@ -56,7 +56,7 @@ const Layout = ({ children }) => {
                         <div className="d-flex align-items-center justify-content-between">
                             {user && (
                                 <p className="m-0 me-3">
-                                    Welcome, <b>{user.username}</b>
+                                    Welcome, <b>{user.name}</b>
                                 </p>
                             )}
                             <form onSubmit={handleLogout}>

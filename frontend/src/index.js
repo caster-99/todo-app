@@ -12,6 +12,7 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Login from './components/Login';
 import ProtectedRoute from './components/ProtectedRoute';
 import Categories from './Categories';
+import Register from './components/Register';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -42,6 +43,7 @@ root.render(
               />
               {/* Public Route for login */}
               <Route path="/login" element={<Login />} />
+              <Route path="/register" element={<Register />} />
             </Routes>
           </Router>
         </CategoriesProvider>

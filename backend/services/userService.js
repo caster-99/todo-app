@@ -96,7 +96,7 @@ const loginUser = async (email, password) => {
         const token = jwt.sign({ id: user.id, email: user.email }, JWT_SECRET, { expiresIn: '1h' });
 
         return {
-            user: { id: user.id, email: user.email, username: user.username },
+            user: { id: user.id, email: user.email, name: user.name },
             token
         };
     } catch (error) {

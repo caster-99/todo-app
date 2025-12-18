@@ -158,6 +158,15 @@ export const getUser = async () => {
     return response.json(); // Return the user data
 };
 
+export const createUser = async (userData) => {
+    const response = await fetch(`${BASE_URL}/users`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(userData),
+    });
+    return response.json();
+};
+
 export const removeAuthToken = () => {
     // Remove the token from localStorage
     localStorage.removeItem('token');

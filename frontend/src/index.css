@@ -1,125 +1,126 @@
 body {
   font-family: "Montserrat Variable", sans-serif;
-  background-color: #fff;
+  background-color: #ffffff;
+  color: #1a1a1a;
 }
 
+/* Updated Neutrals */
 .bg-cream {
-  background-color: #ffeac7;
+  background-color: #f8f9fa; /* Modern Slate White */
 }
 
 .bg-off-white {
-  background-color: #f5f5f5;
+  background-color: #eceef0; /* Cool Grey */
 }
 
 .bg-off-gray {
-  background-color: #adadad;
+  background-color: #697581; /* Charcoal */
 }
 
 a {
-  color: #000;
+  color: #200ec5; /* Sophisticated Blue */
+  text-decoration: none;
 }
 
 input:focus,
 .form-control:focus {
   outline: none !important;
-  border: 1px solid black !important;
+  border: 1px solid #1a1a1a !important;
   box-shadow: none !important;
 }
 
+/* Serious Gradient: Deep Navy to Charcoal */
 .bg-gradient {
-  background: linear-gradient(180deg, #dcc0ff 0%, #f4a6a3 100%) !important;
+  background: linear-gradient(180deg, #88c0f9 0%, #366ca1 100%) !important;
 }
 
 .btn {
-  border-radius: 5px;
+  border-radius: 4px; /* Sharper corners for a more serious look */
   padding: 10px 20px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
+  font-weight: 500;
+  transition: all 0.2s ease;
 }
 
-/* Primary Button */
+/* Primary Button - Deep Slate/Navy */
 .btn-primary {
-  background-color: #dcc0ff; /* Soft pink */
-  color: black;
+  background-color: #1a1a1a;
+  color: #ffffff;
   border: none;
 }
 
 .btn-primary:hover {
-  background-color: #ecdcff;
-  color: black; /* Slightly darker pink for hover effect */
+  background-color: #333333;
 }
 
 .btn-primary:disabled {
-  background-color: #f4a6a3;
-  color: white;
+  background-color: #cccccc;
+  color: #666666;
 }
 
-/* Danger Button */
+/* Danger Button - Deep Crimson */
 .btn-danger {
-  background-color: #f4a6a3; /* Pastel red */
-  color: black;
+  background-color: #b02a37;
+  color: white;
   border: none;
 }
 
 .btn-danger:hover {
-  background-color: #f28c88; /* Slightly darker red for hover effect */
+  background-color: #8a212b;
 }
 
-/* Info Button */
+/* Info Button - Steel Blue */
 .btn-info {
-  background-color: #bae3f2; /* Light pastel blue */
-  color: black;
+  background-color: #4b6584;
+  color: white;
   border: none;
 }
 
 .btn-info:hover {
-  background-color: #a2d7ee; /* Slightly darker blue for hover effect */
+  background-color: #384d66;
 }
 
-/* Success Button */
+/* Success Button - Forest Green */
 .btn-success {
-  background-color: #bce3c0; /* Soft pastel green */
-  color: black;
+  background-color: #2d5a27;
+  color: white;
   border: none;
 }
 
 .btn-success:hover {
-  background-color: #a8d7ad; /* Slightly darker green for hover effect */
+  background-color: #21441d;
 }
 
-/* Warning Button */
+/* Warning Button - Muted Amber */
 .btn-warning {
-  background-color: #ffe6b3; /* Light pastel yellow */
-  color: black;
+  background-color: #d68102;
+  color: white;
   border: none;
 }
 
 .btn-warning:hover {
-  background-color: #ffd98c; /* Slightly darker yellow for hover effect */
+  background-color: #b56d02;
 }
 
-/* Secondary Button */
+/* Secondary Button - Outlined Slate */
 .btn-secondary {
-  background-color: #dfd0f2;
-  color: black;
+  background-color: transparent;
+  border: 1px solid #dee2e6;
+  color: #1a1a1a;
 }
 
 .btn-secondary:hover {
-  background-color: #f1e7fd;
-  border: none;
-  color: black;
+  background-color: #f8f9fa;
+  border-color: #1a1a1a;
+  color: #1a1a1a;
 }
 
 .btn-text {
   background-color: transparent;
-  color: black;
-  border: 1px solid #dcc0ff;
+  color: #1a1a1a;
+  border: 1px solid #1a1a1a;
 }
 
 .btn-text:hover {
-  background-color: #dcc0ff;
-  color: white;
+  background-color: #1a1a1a;
+  color: #ffffff;
 }
