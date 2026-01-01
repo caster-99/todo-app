@@ -107,7 +107,6 @@ const Login = () => {
 
                                             <div className="text-center pt-1 mb-5 pb-1">
                                                 <button
-                                                    disabled={loading || !email || !password}
                                                     className="btn btn-secondary"
                                                     type="button"
                                                     onClick={() => navigate('/register')}
